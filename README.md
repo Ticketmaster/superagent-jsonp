@@ -38,5 +38,14 @@ superagent.get('http://example.com/foo.json').jsonp().end(function(){
 });
 ```
 
+## Changes from upstream
 
+Forked from: https://github.com/lamp/superagent-jsonp
 
+- Dependency on underscore changed to lodash (and added to package.json)
+- Conditional write to "window" removed
+- Do not override end() function unless we first call jsonp(), and only for current request
+- expand "!= null" to "!== null && !== undefined"
+- Add mocha unit tests
+- [Call callback the same way as superagent](https://github.com/lamp/superagent-jsonp/pull/3)
+- [Add jsonp query string with a "&" instead of "?" if url already contains parameters](https://github.com/lamp/superagent-jsonp/pull/2)
