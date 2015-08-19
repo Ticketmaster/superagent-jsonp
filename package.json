@@ -1,6 +1,6 @@
 {
   "name": "@ticketmaster/superagent-jsonp",
-  "version": "0.0.2",
+  "version": "0.0.2-tm3",
   "description": "Wrap a sweet jsonp filling in a savoury superagent wrapper",
   "main": "index.js",
   "dependencies": {
